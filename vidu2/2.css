@@ -1,0 +1,42 @@
+*{margin: 0;padding: 0}
+body {background: url(img/gray_background.jpg);}
+
+.container {
+    margin-top: 30px;
+}
+
+.hieuung {
+    width: 400px;
+    margin: auto;
+    /* margin-top: 50px; */
+}
+
+.motkhoi h3 {
+    background: #74b9ff;
+    color: white;
+    padding: 10px 15px;
+    border-bottom: 1px solid gray;
+}
+
+.motkhoi h3:hover {
+    background: url(img/up.png) no-repeat 95% #74b9ff ;
+    background-size: 20px 20px;
+}
+
+.motkhoi h3.upped {
+	background: #6c5ce7;
+}
+
+.motkhoi h3.upped:hover {
+	 background: url(img/down.png) no-repeat 95% #6c5ce7 ;
+    background-size: 20px 20px;
+}
+
+.ndmotkhoi {
+    padding: 10px;
+    border-right: 1px solid gray;
+    border-left: 1px solid gray;
+    background: #e5e5e5;
+    color: #383838;
+}
+

@@ -10,3 +10,6 @@
 	left: 50%;
 	transform:translateX(-50%);
 }
+.nutso1,.nutso2{
+	float: right;
+}
