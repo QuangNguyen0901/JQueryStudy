@@ -1,13 +1,15 @@
-$(function() {
-	$('.nutso1').click(function(event) {
-		/* Act on the event */
-		$('.dangnhap').animate({opacity: 0});
-		$('.dangky').animate({opacity: 1});
+$(document).ready(function() {
+	//$('.dangky').animate({opacity: 0,marginLeft:-100})
+	$('.nutso2').click(function(){
+		$('.dangky').animate({opacity: 0,marginLeft:-100});
+		// $('.dangky').hide();
+		$('.dangnhap').animate({opacity: 1,marginLeft:0});
+		// $('.dangnhap').show();
 	});
-
-	$('.nutso2').click(function(event) {
-		/* Act on the event */
-		$('.dangky').animate({opacity: 0});
-		$('.dangnhap').animate({opacity: 1});
+	$('.nutso1').click(function(){
+		// $('.dangnhap').hide();
+		$('.dangnhap').animate({opacity: 0,marginLeft:-100});
+		$('.dangky').animate({opacity: 1,marginLeft:0});
+		// $('.dangky').show();
 	});
 });
