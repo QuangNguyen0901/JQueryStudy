@@ -6,3 +6,70 @@
 body {
     background: url(../images/nen.png);
 }
+
+.noidung{
+	width:  40%;
+    margin:  auto;
+}
+
+h1.tieude {
+    margin-bottom:  100px;
+    text-align:  center;
+    font-size: 38px;
+    /* margin:  auto; */
+}
+img.anhnho {
+    height:  100px;
+    margin-right: 10px;
+    float:  left;
+}
+
+.vaicaianh {
+    overflow:  hidden;
+}
+
+._1motkhoi {
+    border-bottom: solid 1px #8080808c;
+    padding-bottom: 20px;
+    margin-bottom:  20px;
+}
+
+h2.tdkhoi {
+    font-size:  40px;
+    font-weight: 30;
+    height: 50px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+h2.tdkhoi.xanh{
+	color: #3cabd0;
+}
+
+h2.tdkhoi.xanh img{
+	margin-right: 2px;
+	transform: rotate(180deg);
+	margin-top:15px;
+
+}
+
+h2.tdkhoi:hover{
+	color: #3cabd0;
+}
+
+h2.tdkhoi:hover img{
+	margin-right: 2px;
+}
+
+.tdkhoi img {
+    float:  right;
+    transition:  1s;
+    margin-top: 15px;
+    margin-right:-30px;
+}
+
+.ndkhoi {
+    color: #464646;
+    font-size: 18px;
+    line-height: 24px;
+}
