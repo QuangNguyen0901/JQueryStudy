@@ -6,16 +6,19 @@
 .chunho {
     font-size: 19px;
     z-index: 3;
-    top: 50%;
+    top: 45%;
     left: 15%;
     position: absolute;
     width: 70%;
     text-align: center;
     color: white;
+    opacity: 0;
+    transform: scale(0);
+    transition:0.4s;
 }
 
 .chuto {
-    top: 38%;
+    top: 45%;
     left: 0;
     position: absolute;
     color: white;
@@ -23,11 +26,42 @@
     width: 100%;
     font-size: 30px;
     z-index: 5;
+    transition:0.4s;
 }
 
-.chuto {}
+.tinto:hover .chuto{
+	/*top: 34%;*/
+	transform: translateY(-40px);
+	/*transition:0.4s;*/
+}
 
-.hinhvuong {border: 2px solid white;position: absolute;top: 10%;left: 10%;height: 80%;width: 80%;z-index: 3;}
+.tinto:hover .hinhvuong{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.tinto:hover .chunho{
+	opacity: 1;
+	transform: scale(1);
+	
+}
+
+.tinto:hover .xam{
+	opacity: 0;
+	
+	
+}
+
+.hinhvuong {
+	border: 1px solid white;
+	position: absolute;
+	top: 10%;left: 10%;
+	height: 80%;
+	width: 80%;z-index: 3;
+	opacity: 0;
+	ransform: scale(0);
+	transition:0.4s;
+}
 
 .gradient {
     width: 450px;
@@ -50,6 +84,7 @@
     z-index: 1;
     top: 0px;
     left: 0px;
+    transition:0.4s;
 }
 
 img.layer1 {
@@ -62,6 +97,8 @@ img.layer1 {
     height: 350px;
     overflow: hidden;
     position: relative;
+    margin: 20px;
+    float: left;
 }
 
 body {
