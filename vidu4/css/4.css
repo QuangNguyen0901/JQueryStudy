@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+.tinbandau,.tinloadthem{
+	width: 980px;
+	margin: auto;
+}
+
 .chunho {
     font-size: 19px;
     z-index: 3;
@@ -15,6 +20,7 @@
     opacity: 0;
     transform: scale(0);
     transition:0.4s;
+    transition-delay: 0.3s;
 }
 
 .chuto {
@@ -61,6 +67,7 @@
 	opacity: 0;
 	ransform: scale(0);
 	transition:0.4s;
+	transition-delay: 0.3s;
 }
 
 .gradient {
@@ -100,6 +107,22 @@ img.layer1 {
     margin: 20px;
     float: left;
 }
+
+.loadthem{
+	margin:auto;
+	clear: both;
+	text-align: center;
+	}
+
+.btnloadthem{
+	background-color: #74aad6;
+	border: none;
+	margin: auto;
+	width: 100px;
+	padding: 5px;
+
+}
+
 
 body {
     background-color: #545454;
