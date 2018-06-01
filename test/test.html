@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script> 
-$(document).ready(function(){
-    $("button").click(function(){
-    	$(body).animate({scrollTop:150},500);
-    });
-});
-</script> 
+	<meta charset="UTF-8">
+	<title>vidu4</title>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<script src="js/test.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js"></script> -->
+	<link rel="stylesheet" href="css/test.css">
 </head>
 <body>
 
-<button>Start Animation</button>
+<h2>HTML Forms</h2>
 
-<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+<form action="">
+  First name:<br>
+  <input type="text" class="a" name="firstname" value="Mickey" readonly="readonly">
+  <br>
+  Last name:<br>
+  <input type="text" class="a" name="lastname" value="Mouse" readonly="readonly">
+  <br><br>
+  <button class="edit">edit</button>
+</form> 
 
-<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+<script>
+$(document).ready(function() {
+	$('.edit').click(function(event) {
+		/* Act on the event */
+console.log("aaa");
+		$('.a').removeAttr("readonly");
+	});
+});
+</script> 
 
 </body>
 </html>
