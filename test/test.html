@@ -10,27 +10,29 @@
 </head>
 <body>
 
-<h2>HTML Forms</h2>
+	<h2>HTML Forms</h2>
 
-<form action="">
-  First name:<br>
-  <input type="text" class="a" name="firstname" value="Mickey" readonly="readonly">
-  <br>
-  Last name:<br>
-  <input type="text" class="a" name="lastname" value="Mouse" readonly="readonly">
-  <br><br>
-  <button class="edit">edit</button>
-</form> 
+	<form>
+		First name:<br>
+		<input type="text" class="a" name="firstname" value="Mickey" readonly>
+		<br>
+		Last name:<br>
+		<input type="text" class="a" name="lastname" value="Mouse" readonly>
+		<br><br>
+		<button class="edit">edit</button>
+	</form> 
 
-<script>
-$(document).ready(function() {
-	$('.edit').click(function(event) {
-		/* Act on the event */
-console.log("aaa");
-		$('.a').removeAttr("readonly");
+	<script>
+	$(document).ready(function() {
+		$('.edit').click(function(event) {
+
+			/* Act on the event */
+			event.preventDefault();
+			console.log("aaa");
+			$('.a').removeAttr('readonly');
+		});
 	});
-});
-</script> 
+	</script> 
 
 </body>
 </html>
